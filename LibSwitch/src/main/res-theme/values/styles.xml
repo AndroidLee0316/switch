@@ -1,0 +1,17 @@
+<resources>
+    <style name="DoorTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/pasc_primary_text</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="DoorEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/pasc_primary_text</item>
+        <item name="android:textColorHint">@color/pasc_primary_text</item>
+        <item name="android:editTextColor">@color/pasc_primary_text</item>
+        <item name="android:inputType">textUri</item>
+    </style>
+</resources>

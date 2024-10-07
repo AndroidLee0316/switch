@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <com.pasc.lib.widget.toolbar.PascToolbar
+        android:id="@+id/ctv_title"
+        style="@style/WhiteFontToolbar"
+        app:enable_under_divider="true"
+        app:support_translucent_status_bar="false"
+        app:title="@string/switch_lib_name" />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/restart_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/switch_lib_net_change_tip"
+                android:textColor="#ff0000" />
+
+            <TextView
+                style="@style/DoorTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/switch_lib_input_api"
+                android:textColorHint="#3333ff" />
+
+            <EditText
+                android:id="@+id/et_api_host"
+                style="@style/DoorEditText"
+                android:enabled="false"
+                android:textColorHint="#3333ff" />
+
+            <TextView
+                style="@style/DoorTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/switch_lib_input_h5" />
+
+            <EditText
+                android:id="@+id/et_h5_host"
+                style="@style/DoorEditText"
+                android:enabled="false" />
+
+            <TextView
+                style="@style/DoorTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/switch_lib_input_gateway" />
+
+            <EditText
+                android:id="@+id/et_gate_way"
+                style="@style/DoorEditText"
+                android:enabled="false" />
+
+            <Switch
+                android:id="@+id/http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/switch_lib_http_or_https"
+                android:visibility="invisible"
+                android:textColor="@color/pasc_primary_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/switch_lib_log_switch"
+                android:textColor="#ff0000" />
+
+            <Switch
+                android:id="@+id/log_file_printer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/switch_lib_file_switch"
+                android:textColor="@color/pasc_primary_text" />
+
+            <Switch
+                android:id="@+id/log_android_printer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/switch_lib_console_switch"
+                android:textColor="@color/pasc_primary_text" />
+
+            <Switch
+                android:id="@+id/log_report_net"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/switch_lib_server_switch"
+                android:textColor="@color/pasc_primary_text" />
+
+            <Switch
+                android:id="@+id/log_catch_crash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/switch_lib_crash_switch"
+                android:textColor="@color/pasc_primary_text" />
+
+            <LinearLayout
+                android:id="@+id/custom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/switch_lib_other"
+                    android:textColor="#ff0000" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/switch_lib_button_confirm" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pasc.lib.hiddendoor">
+
+    <application>
+        <activity
+            android:name=".SwitchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PascTheme"/>
+        <activity
+            android:name=".utils.ProcessPhoenix"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

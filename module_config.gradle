@@ -1,0 +1,27 @@
+ext {
+
+    versionName = "1.0.0"
+    versionCode = 100
+
+    // Sdk and tools
+    minSdkVersion = 21
+    targetSdkVersion = 30
+    compileSdkVersion = 30
+    buildToolsVersion = '30.0.3'
+    constraintLayout = '1.1.2'
+    // App dependencies
+    supportLibraryVersion = '26.1.0'
+
+
+
+    if (isRelease == 'false') {
+        aarVersion = '1.0.2-SNAPSHOT'
+        MAVEN_URL = 'http://10.25.84.18:8089/nexus/content/repositories/Android-Snapshots/'
+    } else {
+        aarVersion = '1.0.2'
+        MAVEN_URL = 'http://10.25.84.18:8089/nexus/content/repositories/Android-Release/'
+    }
+
+    aarWidgetVersion = '1.1.7'
+    aarLibBaseVersion = '1.2.7'
+}

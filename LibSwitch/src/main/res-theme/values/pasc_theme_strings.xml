@@ -1,0 +1,20 @@
+<resources>
+    <!--<string name="app_name">BusinessHiddenDoor</string>-->
+    <string name="switch_lib_name">暗门</string>
+    <string name="switch_lib_net_change_tip">修改网络的配置，需打开重启应用开关</string>
+    <string name="switch_lib_input_api">请输入api域名:</string>
+    <string name="switch_lib_input_h5">请输入h5域名:</string>
+    <string name="switch_lib_input_gateway">请输入网关:</string>
+    <string name="switch_lib_http_or_https">http/https切换</string>
+    <string name="switch_lib_log_switch">日志开关：</string>
+    <string name="switch_lib_file_switch">输出到文件开关：</string>
+    <string name="switch_lib_console_switch">输出到控制台开关：</string>
+    <string name="switch_lib_server_switch">上报服务器开关：</string>
+    <string name="switch_lib_crash_switch">捕获crash开关：</string>
+    <string name="switch_lib_button_confirm">确定</string>
+    <string name="switch_lib_other">其他自定义数据：</string>
+
+
+
+
+</resources>
